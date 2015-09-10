@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/kelseyaten/Desktop/Junior/CS_619/P1/MyStreamer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="/Users/kelseyaten/Desktop/Junior/CS_619/P1/MyStreamer/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-1967038a121218fafb3e24d412e5bb93824a2462.jar" />
+    </item>
+    <item
+        jar="/Users/kelseyaten/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="/Users/kelseyaten/Desktop/Junior/CS_619/P1/MyStreamer/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-80e5ca8320672ba26de9d6fb17743a16279472b7.jar" />
+    </item>
+    <item
+        jar="/Users/kelseyaten/Desktop/Junior/CS_619/P1/MyStreamer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="/Users/kelseyaten/Desktop/Junior/CS_619/P1/MyStreamer/app/build/intermediates/pre-dexed/debug/classes-f7ce7d7d26e8b2ab1ab6b1d721b4b8aebbe86d67.jar" />
+    </item>
+    <item
+        jar="/Users/kelseyaten/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.4.0/f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2/picasso-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="/Users/kelseyaten/Desktop/Junior/CS_619/P1/MyStreamer/app/build/intermediates/pre-dexed/debug/picasso-2.4.0-0fc61774f8d3a18de322a3d80d00a822dc0ef145.jar" />
+    </item>
+    <item
+        jar="/Users/kelseyaten/Desktop/Junior/CS_619/P1/MyStreamer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Users/kelseyaten/Desktop/Junior/CS_619/P1/MyStreamer/app/build/intermediates/pre-dexed/debug/classes-47a5507014e54f709c20f42b27ee7850375cd689.jar" />
+    </item>
+
+</items>
