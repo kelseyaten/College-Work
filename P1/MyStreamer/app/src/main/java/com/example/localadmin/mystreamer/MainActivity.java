@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         Picasso.with(this)
                 .load("http://i.imgur.com/s6Nkq0c.png")
                 .into(imageView);
-
+        //final so that you can access the variable inside the method
         final SpotifyApi api = new SpotifyApi();
         final SpotifyService spotify = api.getService();
 
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void success(ArtistsPager artistsPager, Response response) {
                         int count = 0;
+                            //count to ten so you only see 10 artist names
                             for( Artist artist: artistsPager.artists.items ) {
                                 if(count < 10) {
                                     Log.d("ArtistName", artist.name);
