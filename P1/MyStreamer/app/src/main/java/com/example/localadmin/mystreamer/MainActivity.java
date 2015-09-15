@@ -23,8 +23,6 @@ import retrofit.RetrofitError;
 import retrofit.client.Response;
 
 public class MainActivity extends AppCompatActivity {
-
-    //checking to see if svn is working
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,8 +60,6 @@ public class MainActivity extends AppCompatActivity {
                         Log.d("Artist Failure", error.getUrl() );
                     }
                 });
-
-
                 return false;
             }
 
@@ -74,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
