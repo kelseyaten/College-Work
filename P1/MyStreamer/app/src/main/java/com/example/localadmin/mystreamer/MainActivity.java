@@ -24,6 +24,7 @@ import retrofit.client.Response;
 
 public class MainActivity extends AppCompatActivity {
 
+    //checking to see if svn is working
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
