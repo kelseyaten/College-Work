@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         final SearchView searchView = (SearchView) findViewById(R.id.searchView);
         searchView.setBackgroundColor(Color.LTGRAY);
+        private String[] artistNamel
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
             @Override
@@ -47,18 +48,18 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void success(ArtistsPager artistsPager, Response response) {
                         int count = 0;
-                            //count to ten so you only see 10 artist names
-                            for( Artist artist: artistsPager.artists.items ) {
-                                if(count < 10) {
-                                    Log.d("ArtistName", artist.name);
-                                    count++;
-                                }
+                        //count to ten so you only see 10 artist names
+                        for (Artist artist : artistsPager.artists.items) {
+                            if (count < 10) {
+                                Log.d("ArtistName", artist.name);
+                                count++;
                             }
+                        }
                     }
 
                     @Override
                     public void failure(RetrofitError error) {
-                        Log.d("Artist Failure", error.getUrl() );
+                        Log.d("Artist Failure", error.getUrl());
                     }
                 });
                 return false;
@@ -68,7 +69,9 @@ public class MainActivity extends AppCompatActivity {
             public boolean onQueryTextChange(String s) {
                 return false;
             }
+
         });
+        setContentView(R.layout.activity_main);
 
     }
     @Override
