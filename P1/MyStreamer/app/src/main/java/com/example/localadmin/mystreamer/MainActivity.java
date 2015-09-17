@@ -8,11 +8,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
+
 import kaaes.spotify.webapi.android.SpotifyApi;
 import kaaes.spotify.webapi.android.SpotifyService;
 import kaaes.spotify.webapi.android.models.Album;
@@ -38,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
         final SearchView searchView = (SearchView) findViewById(R.id.searchView);
         searchView.setBackgroundColor(Color.LTGRAY);
-        private String[] artistNamel
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
             @Override
@@ -48,18 +52,36 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void success(ArtistsPager artistsPager, Response response) {
                         int count = 0;
-                        //count to ten so you only see 10 artist names
-                        for (Artist artist : artistsPager.artists.items) {
-                            if (count < 10) {
-                                Log.d("ArtistName", artist.name);
-                                count++;
+                        ArrayList<Artist> artistArray = new ArrayList<>();
+
+                            //count to ten so you only see 10 artist names
+                            for( Artist artist: artistsPager.artists.items ) {
+                                if(count < 10) {
+                                    artistArray.add(artist);
+                                    Log.d("ArtistName", artist.name);
+                                    count++;
+                                }
                             }
+
+
+                        //----Make the listView----
+                        ListView listView = (ListView) findViewById(R.id.listView);
+                        Context context = getApplicationContext();
+                        ArrayList<String> artistList = new ArrayList<>();
+
+                        for (Artist artist: artistArray) {
+                            artistList.add(artist.name);
                         }
+
+                        
+                        ArrayAdapter<String> adapter = new ArrayAdapter<>(context, android.R.layout.simple_list_item_1, artistList);
+                        listView.setAdapter(adapter);
+                        adapter.notifyDataSetChanged();
                     }
 
                     @Override
                     public void failure(RetrofitError error) {
-                        Log.d("Artist Failure", error.getUrl());
+                        Log.d("Artist Failure", error.getUrl() );
                     }
                 });
                 return false;
@@ -69,9 +91,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onQueryTextChange(String s) {
                 return false;
             }
-
         });
-        setContentView(R.layout.activity_main);
 
     }
     @Override
