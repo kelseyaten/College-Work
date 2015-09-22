@@ -44,6 +44,52 @@
     <option name="id" value="Android" />
   </component>
   <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://stsvn.cs.unh.edu/svn/cs619.kex496/P1/MyStreamer" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.gradle">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://stsvn.cs.unh.edu/svn/cs619.kex496/P1/MyStreamer/.gradle" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.idea">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://stsvn.cs.unh.edu/svn/cs619.kex496/P1/MyStreamer/.idea" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://stsvn.cs.unh.edu/svn/cs619.kex496/P1/MyStreamer/app" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://stsvn.cs.unh.edu/svn/cs619.kex496/P1/MyStreamer/build" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gradle">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://stsvn.cs.unh.edu/svn/cs619.kex496/P1/MyStreamer/gradle" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="mySupportsUserInfoFilter" value="true" />
   </component>
   <component name="masterDetails">
