@@ -9,6 +9,7 @@
         android:layout_gravity="center"
         android:layout_width="48dp"
         android:layout_height="94dp"
+        android:layout_toRightOf="@+id/label"
         android:scaleType="centerInside"
         android:layout_weight="0.17">
     </ImageView>
